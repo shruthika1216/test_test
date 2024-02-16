@@ -5,7 +5,6 @@
       target_database='dev_raw',
       target_schema='snapshots',
       unique_key='id',
-
       strategy='timestamp',
       updated_at='_etl_loaded_at',
     )

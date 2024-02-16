@@ -9,7 +9,7 @@ with customers as (
 ),
 
 payment as (
-    select * from {{ ref('stg_payments')}}
+      select * from {{ ref('stg_payments')}}
 ),
 
 

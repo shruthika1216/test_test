@@ -2,7 +2,7 @@ version: 2
 
 sources:
   - name: jaffle_shop
-    schema: jaffle_Shop
+    schema: jaffle_shop
     tables:
       - name: raw_customers
         columns:
