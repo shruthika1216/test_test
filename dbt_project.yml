@@ -45,7 +45,11 @@ models:
          +materialized: view
          +warn_if: >1
          +store_failures: true
+<<<<<<< HEAD
      staging:
+=======
+      staging:
+>>>>>>> 23e6edf425cac2ddb660a1d0c370c8bb46b63962
          +materialized: table
          +tag: "contains_staging"
 
