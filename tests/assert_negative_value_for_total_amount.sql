@@ -1,3 +1,3 @@
 select id
-from "dev_raw"."public"."my_first_dbt_model"
+from "DEV_RAW"."JAFFLE_SHOP"."my_first_dbt_model"
 where id is null
