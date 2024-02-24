@@ -46,8 +46,8 @@ models:
          +warn_if: >1
          +store_failures: true
       staging:
-            +materialized: table
-            +tag: "contains_staging"
+         +materialized: table
+         +tag: "contains_staging"
 
 tests:
   +severity: warn
