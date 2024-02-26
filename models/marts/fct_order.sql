@@ -9,7 +9,7 @@ with customers as (
 ),
 
 payment as (
-    select * from {{ ref('stg_payments')}}
+      select * from {{ ref('stg_payments')}}
 ),
 
 
@@ -42,7 +42,11 @@ order_payment as (
         
         {% for payment_method in payment_methods -%}
 
+<<<<<<< HEAD
+         sum(case when payment_method = '{{ payment_method }}' then amount_usd else 0 end) as {{ payment_method }}_amount        
+=======
          sum(case when payment_method = '{{ payment_method }}' then AMOUNT_USD else 0 end) as {{ payment_method }}_amount        
+>>>>>>> a309157fb0a5941c60996473f7db470bba333c44
        
        {%- if not loop.last -%}
          ,
