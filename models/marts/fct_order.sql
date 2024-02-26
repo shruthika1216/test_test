@@ -42,7 +42,7 @@ order_payment as (
         
         {% for payment_method in payment_methods -%}
 
-<
+
          sum(case when payment_method = '{{ payment_method }}' then amount_usd else 0 end) as {{ payment_method }}_amount        
 
          sum(case when payment_method = '{{ payment_method }}' then AMOUNT_USD else 0 end) as {{ payment_method }}_amount        
