@@ -43,19 +43,12 @@ models:
     # Config indicated by + and applies to all files under models/example/
      example:
          +materialized: view
-         +warn_if: >1
+           +warn_if:= > 1
          +store_failures: true
-<<<<<<< HEAD
-<<<<<<< HEAD
      staging:
-=======
-      staging:
->>>>>>> 23e6edf425cac2ddb660a1d0c370c8bb46b63962
-=======
-     staging:
->>>>>>> a309157fb0a5941c60996473f7db470bba333c44
          +materialized: table
          +tag: "contains_staging"
+
 
 tests:
   +severity: warn
