@@ -22,7 +22,7 @@ sources:
          warn_after: { count: 12, period: hour }
          error_after: { count: 24, period: hour }
 
-
+/*
       -  name: raw_orders
          columns:
          - name: id
@@ -40,7 +40,7 @@ sources:
          freshness:
          warn_after: {count: 12, period: hour}
          error_after: {count: 24, period: hour}
-  
+  */
 
 
  
