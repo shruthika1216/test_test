@@ -35,8 +35,8 @@ customer_orders as (
         orders.order_id,
         min(orders.order_date) as first_order_date,
         max(orders.order_date) as most_recent_order_date,
-        count(orders.order_id) as number_of_orders,        
-        sum(case when payment_method in('credit_card','coupon','gift_card')  then amount_usd else 0 end) as value
+        count(orders.order_id) as number_of_orders      
+        --sum(case when payment_method in('credit_card','coupon','gift_card')  then amount_usd else 0 end) as value
 
     from pay join orders on orders.order_id = pay.order_id  
     group by 1
@@ -55,8 +55,8 @@ final as (
         customer_orders.order_id,
         customer_orders.first_order_date,
         customer_orders.most_recent_order_date,
-        customer_orders.number_of_orders,
-        customer_orders.value
+        customer_orders.number_of_orders
+       -- customer_orders.value
 
         
     
