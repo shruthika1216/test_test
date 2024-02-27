@@ -43,11 +43,11 @@ models:
     # Config indicated by + and applies to all files under models/example/
      example:
          +materialized: view
-           +warn_if:= > 1
+         +warn_if: >1
          +store_failures: true
-     staging:
-         +materialized: table
-         +tag: "contains_staging"
+         staging:
+            +materialized: table
+            +tag: "contains_staging"
 
 
 tests:
